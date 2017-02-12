@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hungryhackers.othello.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/score_bg"
+        android:gravity="center_vertical"
+        android:layout_weight="0.07"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/player_white"
+            android:id="@+id/imageView"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:text="X 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/white_score"
+            android:layout_weight="0.81"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="White's Turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/w_turn"
+            android:layout_weight="1"
+            android:textStyle="normal|bold|italic"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/player_black"
+            android:id="@+id/imageView2"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:text=" X 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/black_score"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Black's Turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_turn"
+            android:layout_weight="1"
+            android:textStyle="normal|bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/board_layout"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight=".93">
+
+    </LinearLayout>
+
+</LinearLayout>
